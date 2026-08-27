@@ -1,0 +1,5 @@
+<map id="Crc32Hasher" name="Crc32Hasher">
+<area shape="rect" id="Node000001" title="Вычисляет CRC32&#45;хэш блока данных." alt="" coords="5,139,105,204"/>
+<area shape="rect" id="Node000002" href="$classIHasher.html" title="Абстрактный интерфейс для вычисления хэша блока данных." alt="" coords="5,5,105,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,104,58,138,53,138,53,104"/>
+</map>

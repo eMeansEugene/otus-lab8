@@ -1,0 +1,7 @@
+<map id="IHasher" name="IHasher">
+<area shape="rect" id="Node000001" title="Абстрактный интерфейс для вычисления хэша блока данных." alt="" coords="67,5,167,91"/>
+<area shape="rect" id="Node000002" href="$classCrc32Hasher.html" title="Вычисляет CRC32&#45;хэш блока данных." alt="" coords="5,139,105,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,104,74,140,69,137,87,102"/>
+<area shape="rect" id="Node000003" href="$classMd5Hasher.html" title="Вычисляет MD5&#45;хэш блока данных." alt="" coords="129,139,229,204"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,102,165,137,161,140,142,104"/>
+</map>

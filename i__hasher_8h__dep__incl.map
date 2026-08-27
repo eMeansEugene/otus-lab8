@@ -1,0 +1,9 @@
+<map id="i_hasher.h" name="i_hasher.h">
+<area shape="rect" id="Node000001" title="Интерфейс алгоритма хэширования блоков." alt="" coords="153,5,241,31"/>
+<area shape="rect" id="Node000002" href="$comparator_8h.html" title="Ленивое блочное сравнение файлов для поиска дубликатов." alt="" coords="5,79,113,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,39,83,81,81,76,161,34"/>
+<area shape="rect" id="Node000003" href="$crc32__hasher_8h.html" title="Реализация IHasher на основе CRC32 (Boost.CRC)." alt="" coords="137,79,256,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,44,199,79,194,79,194,44"/>
+<area shape="rect" id="Node000004" href="$md5__hasher_8h.html" title="Реализация IHasher на основе MD5 (Boost.UUID)." alt="" coords="280,79,393,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,34,315,76,313,81,230,39"/>
+</map>
