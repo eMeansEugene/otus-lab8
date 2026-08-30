@@ -12,6 +12,8 @@
 
 #include <filesystem>
 #include <memory>
+#include <fstream>
+#include <unordered_map>
 #include <vector>
 
 #include "i_hasher.h"
@@ -40,11 +42,12 @@ public:
      * @param groups Группы файлов одинакового размера (от Scanner::Run).
      * @return Группы файлов-дубликатов (≥ 2 файла в каждой группе).
      */
-    std::vector<std::vector<fs::path>> Process(const std::vector<std::vector<fs::path>>& groups) const;
+    std::vector<std::vector<fs::path>> Process(const std::vector<std::vector<fs::path>>& groups);
 
 private:
     size_t block_size_;                  ///< Размер блока чтения.
     std::shared_ptr<IHasher> hasher_;    ///< Алгоритм хэширования.
+    std::unordered_map<std::string, std::unique_ptr<std::ifstream>> open_files_; ///< Открытые файлы
 
     /**
      * @brief Прочитать один блок файла.
@@ -52,14 +55,14 @@ private:
      * @param block_index Номер блока (0-based).
      * @return Строка из block_size_ байт (последний блок дополнен нулями).
      */
-    std::string ReadBlock(const fs::path& path, size_t block_index) const;
+    std::string ReadBlock(const fs::path& path, size_t block_index);
 
     /**
      * @brief Дожать одну группу файлов до конца — определить дубликаты внутри неё.
      * @param group Указатели на пути файлов-кандидатов.
      * @return Группы дубликатов (может быть несколько, если группа распалась).
      */
-    std::vector<std::vector<fs::path>> ProcessGroup(std::vector<const fs::path*> group) const;
+    std::vector<std::vector<fs::path>> ProcessGroup(std::vector<const fs::path*> group);
 };
 
 #endif // BAYAN_COMPARATOR_H
